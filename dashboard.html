@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+
+<body onload="checkLogin()">
+
+<div class="sidebar">
+    <h2>Muhammad Ade Bahrain</h2>
+    <a href="dashboard.html">Dashboard</a>
+    <a href="profil.html">Profil</a>
+    <a href="tugas1.html">Tugas 1</a>
+    <a href="tugas2.html">Tugas 2</a>
+    <a href="tugas3.html">Tugas 3</a>
+    <a href="quizz.html">quizz</a>
+    <a href="akunsosmed.html">Akun Sosmed</a>
+    <a href="#" onclick="logout()">Logout</a>
+    
+    <!-- ABOUT KECIL -->
+    <div class="about-link">
+        <a href="about.html">menonjolkan kepercayaan diri,<br>gaya hidup santai,<br>
+            fokus pada kreativitas konten,dan semangat pantang menyerah.</a>
+    </div>
+</div>
+
+<div class="main">
+    <h1>Dashboard Editing</h1>
+    <p style="margin-bottom:20px;">Selamat datang di panel creator 🎬</p>
+
+    <!-- ===== STATISTIK ===== -->
+    <div class="edit-grid">
+
+        <div class="edit-card">
+            <h2>50</h2>
+            <p>Total Video</p>
+        </div>
+
+        <div class="edit-card">
+            <h2>45</h2>
+            <p>Sudah Upload</p>
+        </div>
+
+        <div class="edit-card">
+            <h2>5</h2>
+            <p>Draft Editing</p>
+        </div>
+
+        <div class="edit-card">
+            <h2>4.8★</h2>
+            <p>Rating Konten</p>
+        </div>
+
+    </div>
+
+
+    <!-- ===== KONTEN BAWAH ===== -->
+    <div class="edit-bottom">
+
+        <!-- PROJECT TERBARU -->
+        <div class="card">
+            <h3>🎞 Project Buatan Saya</h3><br>
+            <ul>
+                <li>Preset Jedag Jedug Trend</li>
+                <li>Preset Jedag Jedug Old</li>
+                <li>Preset Soft Spoken</li>
+                <li>Preset Cinematic Foto/video</li><br>
+                <!-- Italic -->
+                <p><i>#renzzpresett #presetalightmotion</i></p>
+            </ul>
+        </div>
+
+        <!-- QUICK LINK -->
+<div class="card">
+    <h3>🚀 Quick Access</h3>
+
+    <button onclick="showContent('sosmed')">Sosial Media</button>
+    <button onclick="showContent('p1')">Project 1</button>
+    <button onclick="showContent('p2')">Project 2</button>
+</div>
+
+<!-- AREA TAMPIL KONTEN -->
+<div class="card" id="contentArea" style="margin-top:15px;">
+    <p>Pilih menu di atas untuk menampilkan konten...</p>
+</div>
+
+
+    </div>
+
+</div>
+
+</body>
+</html>

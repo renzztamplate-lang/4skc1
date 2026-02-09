@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Mahasiswa</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body class="login-body">
+
+    <div class="glass-box">
+
+    <!-- gambar/logo -->
+    <div class="logo">
+        <img src="media/gambar_6.jpeg" alt="logo">
+    </div>
+
+    <h2>🎓 Login Mahasiswa</h2>
+
+    <div class="input-box">
+        <i class="fa fa-user"></i>
+        <input type="text" id="username" placeholder="Username">
+    </div>
+
+    <div class="input-box">
+        <i class="fa fa-lock"></i>
+        <input type="password" id="password" placeholder="Password">
+        <span class="toggle" onclick="showPass()">
+            <i class="fa fa-eye"></i>
+        </span>
+    </div>
+
+    <button onclick="login()">Masuk</button>
+
+    <p class="info">Gunakan akun mahasiswa</p>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>
